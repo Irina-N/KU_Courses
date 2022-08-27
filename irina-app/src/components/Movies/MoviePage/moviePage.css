@@ -1,0 +1,31 @@
+.movie-info p {
+	margin: 0 0 10px;
+}
+
+.movie-plot {
+	padding-top: 10px;
+	font-size: 1.1rem;
+}
+
+.movie-plot p {
+	margin-bottom: 5px;
+}
+
+.btn-back {
+	margin-top: 20px;
+	padding: 5px 18px;
+	width: fit-content;
+	background-color: #435d7d;
+	border-color: #435d7d;
+}
+
+.btn-back:hover {
+	background-color: #435d7d;
+	border-color: #435d7d;
+	opacity: .8;
+}
+
+.msg-text {
+	padding: 20px;
+	font-size: 1.1rem;
+}

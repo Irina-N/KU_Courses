@@ -1,0 +1,20 @@
+.description-text {
+	font: 300 1.2rem 'Roboto', sans-serif;;
+	text-align: center;
+	line-height: 1.4;
+}
+
+.description-link {
+ text-decoration: none;
+ font-weight: 500;
+ color: #ff9f3c;
+}
+.description-link:hover{
+	color: #ff9f3c;
+	text-decoration: underline;
+}
+
+.description-link:active{
+	color: #fff;
+	text-decoration: underline;
+}

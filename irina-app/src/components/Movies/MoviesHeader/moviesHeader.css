@@ -1,0 +1,42 @@
+.table-title {
+	padding-bottom: 15px;
+	background: #435d7d;
+	color: #fff;
+	padding: 16px 30px;
+	min-width: 100%;
+	margin: 0 -20px 20px;
+	border-radius: 3px 3px 0 0;
+}
+
+.table-title h2 {
+	margin: 5px 0 0;
+	font-size: 30px;
+}
+
+.table-title h4 {
+	margin: 5px 0 0;
+	font-size: 1.2rem !important;
+	display: flex;
+	align-items: center;
+}
+
+.material-icons.star {
+	margin-left: .15rem;
+}
+
+.table-title .btn {
+	font-size: 1rem;
+	min-width: fit-content;
+	outline: none !important;
+	margin-left: 10px;
+}
+
+.table-title .btn i {
+	float: left;
+	font-size: 1.4rem;
+	margin-right: 5px;
+}
+
+.table-title .btn span {
+	line-height: 1.5rem;
+}

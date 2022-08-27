@@ -1,0 +1,36 @@
+{
+	"myName": "Irina Narožniaia",
+	"navigation": {
+		"home": "Pagrindinis",
+		"movies": "Filmai",
+		"about": "Apie mus"
+	},
+	"home": {
+		"description": "Tai nedidelis mokomasis React projektas, kuris sukuriau <1>{{name}}</1> per FRONT-END programavimo kursą Klaipėdos Universitete."
+	},
+	"movies": {
+		"header": {
+			"avRating": "Vidutinis Reitingas",
+			"addBtn": "Pridėti Naują Filmą",
+			"delBtn": "Ištrinti"
+		},
+		"tableTitles": {
+			"title": "Pavadinimas",
+			"plot": "Siužetas",
+			"director": "Režisierius",
+			"genres": "Žanrai",
+			"year": "Metai",
+			"actions": "Veiksmai",
+			"rating": "Reitingas"
+		}
+	},
+	"about": {
+		"title": "Apie mus",
+		"text": {
+			"p1": "Žemiau eis fiktyvus tekstas.",
+			"p2": "Kalbas nagų oželis to apgriuvo. Pievos kasė barzdoti nuo čižylos tolo marguliuoja. Išdegę katrų žalios vat skardžiai grybų širdis. Juodas giria žvaigždelės peri kožnam. Dvelksi plyšį broliai žiedų tėvynę. Skyrium sūdo kiauliabudės. Kropkos tūlon gegutėlė akį nuplikę akį serbentai. Aukštas nosis blendis auga rudeniop liula arklais.",
+			"p3": "Miškai visa ąžuolų. Dešimtis toj pakalnes vočių palikę. Brendina vėju išlaužia šio dagiliai virto miškuos. Duonon vėjo medžionės ligas gailiai maž didžią. Visokių žymu gydžia želia gyvuliai. Patogu saulė puikybė ligų mickevčius tapo plotuos. Dūšion kieta išleidę jėg nesuskaityti kožno puntuko.",
+			"p4": "Pušyne kokią paukšteliai. Skalsus stogu viežlyvi kilo įslinko upės ėgliai. Medžio plaka raudoną veria pabėręs dera pamėgo. Platus ligų sustarę. Juodas jauti siūravo. Griūdamas imas žolynai. Kėkštai terp liemenys. Laukia upelė visoki veidą paveikslą renka piktoja."
+		}
+	}
+}

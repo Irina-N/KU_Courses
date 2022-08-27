@@ -1,0 +1,12 @@
+.pagination {
+	float: right;
+	margin: 0 0 5px;
+}
+
+
+.hint-text {
+	float: left;
+	height: 43px;
+	padding: 10px 12px 10px;
+	font-size: 13px;
+}

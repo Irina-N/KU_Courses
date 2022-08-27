@@ -1,0 +1,44 @@
+.navbar {
+	min-width: 1000px;
+}
+
+.nav-pills {
+	height: 50px;
+	align-items: center;
+}
+
+.nav-link,
+.dropdown-item {
+	font-size: 1rem;
+	font-family: 'Roboto', sans-serif;
+	margin-right: -1px;
+}
+
+.nav-link:hover {
+	background-color: #435d7d38 !important;
+}
+
+.dropdown-item:active,
+.nav-link.active {
+	background-color: #435d7d !important;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+	background-color: #435d7d;
+}
+
+#nav-dropdown {
+	width: 8rem;
+	padding-left: 20px;
+}
+
+.dropdown-menu.show {
+	min-width: fit-content;
+	width: 8rem;
+}
+
+.dropdown-toggle::after {
+	margin-left: .6rem;
+	vertical-align: 0.2em;
+}
