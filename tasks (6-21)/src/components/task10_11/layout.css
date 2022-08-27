@@ -1,0 +1,44 @@
+.text {
+	font-size: 1rem;
+}
+
+.cards-block {
+	justify-content: center;
+	align-items: center;
+	gap: 15px;
+	height: 300px;
+}
+
+.plan-card {
+	height: 230px;
+	padding: 15px;
+	background-color: rgb(234, 229, 240);
+	transition: all .5s;
+}
+
+.plan-card:hover {
+	height: 260px;
+	padding: 20px;
+	background-color: gold;
+}
+
+.btn-order {
+	background-color: rgb(127, 47, 173);
+	color: #fff;
+	font-size: .8rem;
+	border: none;
+	border-radius: 0;
+	font-weight: 300;
+	margin-top: 15px;
+	padding: 5px 20px;
+	transition: all .5s;
+}
+
+.btn-order:hover {
+	background-color: rgb(94, 15, 140);	
+}
+
+.card-text {
+	font-size: .8rem;
+	margin: 0 auto;
+}

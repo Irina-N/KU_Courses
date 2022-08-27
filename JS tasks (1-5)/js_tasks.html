@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>js</title>
+</head>
+
+<body>
+
+	<h1 style="text-align: center">JS tasks</h1>
+	<p>Look in console</p>
+
+	<script>
+
+		/* 
+		1. Parašykite JavaScript funkciją, kad gautumėte paskutinį masyvo elementą, o nurodžius parametrą „n“, būtų pateikti paskutiniai „n“ masyvo elementai.
+		Gaunama išvestis:
+			-2
+			[9,0,-2]
+			[7,9,0,-2] 
+		*/
+		console.log('==== TASK 1 ====');
+
+		const last = (arr, n = 1) => {
+			if (!Number.isInteger(n)) {
+				n = 1;
+			}
+			if (n === 1) {
+				return arr[arr.length - 1];
+			} else {
+				n *= -1;
+				return arr.slice(n);
+			}
+		};
+		
+		console.log(last([7, 9, 0, -2]));
+		console.log(last([7, 9, 0, -2],3));
+		console.log(last([7, 9, 0, -2],6));
+
+		/* 
+		2. Parašykite JavaScript programą (funkciją), kad sujungtumėte visus duoto masyvo elementus į eilutę ir pakeistumėte spausdinamas reikšmes kaip nurodyta pavyzdžiuose.
+		Bandymo pavyzdžiai:
+		["Red", "Green", "White", "Black"]
+		Gaunama išvestis:
+		"Red,Green,White,Black"
+		"RED,GREEN,WHITE,BLACK"
+		"red;green;white;black" 
+		*/
+		console.log('==== TASK 2 ====');
+
+		const getStrings = (arr) => {
+			console.log(arr.join(','));
+			console.log(arr.map(el => el.toUpperCase()).join(','));
+			console.log(arr.map(el => el.toLowerCase()).join(';'));
+		};
+
+		getStrings(["Red", "Green", "White", "Black"]);
+
+		/* 3. Parašykite JavaScript programą masyvo elementams rūšiuoti didėjimo ir mažėjimo atvejais. */
+
+		console.log('==== TASK 3 ====');
+		
+		const sortArrAsc = (arr) => {
+			let continueSorting = false;
+
+			for (let i = 1; i < arr.length; i++) {
+				if (arr[i - 1] > arr[i]) {
+					continueSorting = true;
+					arr = [...arr.slice(0, i - 1), arr[i], arr[i - 1], ...arr.slice(i + 1)];
+				}
+			}
+
+			if (continueSorting) {
+				continueSorting = false;
+				return sortArrAsc(arr);
+			}
+
+			return arr;
+		};
+
+		const sortArr = (arr) => {
+			arr = sortArrAsc(arr);
+			return (`
+			Didėjimo tvarka: ${arr.join(', ')}
+			Mažėjimo tvarka: ${arr.reverse().join(', ')}`);
+		};
+
+		console.log([ 3, 8, 7, 6, 5, -4, -3, 2, 1 ])
+		console.log(sortArr([ 3, 8, 7, 6, 5, -4, -3, 2, 1 ]));
+
+		/* 4. Parašykite JavaScript programą (funkciją), skirtą dviejų masyvų sąjungai apskaičiuoti (naujam kintamajam), gaunamo masyvo elementai unikalūs. */
+
+		console.log('==== TASK 4 ====');
+
+	const union = (arr1, arr2) => {
+		let newArr = [...arr1, ...arr2];
+		let uniqNums = new Set(newArr);
+		return [...uniqNums];
+	}
+
+	console.log(union([1, 2, 3], [100, 2, 1, 10]));
+
+ /* 
+	Parašykite JavaScript funkciją, kad rūšiuotumėte duotą objektų masyvą pagal pavadinimo (title) reikšmę. Atspausdinkite visus gautus rezultatus.
+	a) Pirmiausia sąrašas turi būti filtruojamas pagal libraryID skaičių, eliminuojant objektus, kurių ID skaičius yra mažesnis už 1000.
+	5
+	b) Raskite knygą (objektą) su didžiausiu ID numeriu ir jo pozicija (indeksu) masyve (prieš surūšiuojant masyvą, bet po filtracijos).
+	c) Apskaičiuokite visų, po filtracijos, likusių ID sumą.
+	d) Atlikite rūšiavimą pagal pavadinimą (title). 
+*/
+
+	console.log('==== TASK 5 ====');
+
+		let library = [
+			{ author: 'Bill Gates', title: 'The Road Ahead', libraryID: 1254},
+			{ author: 'J. K. Rowling', title: 'Harry Potter', libraryID: 554},
+			{ author: 'Steve Jobs', title: 'Walter Isaacson', libraryID: 4264},
+			{ author: 'Suzanne Collins', title: 'Mockingjay: The Final Book of The Hunger Games', libraryID: 3245}
+		];
+
+		const filteredLibrary = library.filter(book => book.libraryID >= 1000);		
+		console.log('A)', filteredLibrary);
+
+		let maxID = 0;
+
+		for (let book of filteredLibrary) {
+			if (book.libraryID > maxID) {
+				maxID = book.libraryID;
+			}
+		};
+
+		let maxIdIndex = filteredLibrary.findIndex(book => book.libraryID === maxID);
+
+		console.log(`B) Paskutinė knyga: '${filteredLibrary[maxIdIndex].title}' (${filteredLibrary[maxIdIndex].libraryID}), pozicija: ${maxIdIndex}`);
+
+		console.log(`C) Suma: ${filteredLibrary.reduce((sum, book) => {return sum + book.libraryID}, 0)}`);
+
+		filteredLibrary.sort((book1, book2) => {return book1.title > book2.title ? 1 : -1});
+		
+		console.log('D)', filteredLibrary);
+
+	</script>
+</body>
+
+</html>
