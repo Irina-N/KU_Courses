@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;	
+	transition: all .5s;
+}
+
+body {
+	background-color: #efefef;
+	color:rgb(39, 36, 43);
+	font: 300 1.2rem 'Roboto', sans-serif;
+}
+
+form,
+.container {
+	background-color: rgb(230, 216, 255);	
+	width: fit-content;	
+	margin: 30px auto;
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 25px;
+	border-radius: 8px;
+}
+
+fieldset {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: baseline;
+	border: none;
+	gap: .4rem;	
+}
+
+input[type=number] {
+	width: 4.5rem;
+	border: none;
+	font: 400 1.5rem 'Nanum Brush Script', cursive;
+	line-height: 1.5rem;
+	padding-top: .15rem;
+	color: #3b2cc3;
+	text-align: right;
+	padding-right: .5rem;
+	height: 2rem;
+}
+
+input[type=submit],
+.btn {
+	text-decoration: none;
+	padding: 8px 15px;
+	width: fit-content;
+	font: 500 1.2rem 'Roboto', sans-serif;
+	color: #fff;
+	background-color: #5002a3;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+input[type=submit]:hover {
+	opacity: .8;
+}
+
+input[type=submit]:active {
+	opacity: 1;
+}
