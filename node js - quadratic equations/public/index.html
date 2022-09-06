@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="/style.css">
+	<title>Solve quadratic equations</title>
+</head>
+
+<body>
+	<form action="/" method="post">
+		<fieldset>
+			<input id="a" name="a" type="number" required /> <span>x<sup>2</sup> + (</span> <input id="b" name="b" type="number" required /> x) + (<input id="c" name="c" type="number" />) = <span>0</span>
+		</fieldset>
+		<input type="submit" value="Solve" />
+	</form>
+	<section class="answer-block hidden">
+		<p class="answer"><strong>Answer: <strong>${answer.length ? answer.join(', ') : 'No solutions'}</p>
+		<a class="btn" href="/">Solve another one</a>
+	</section>
+</body>
+
+</html>
