@@ -14,7 +14,8 @@ export const App = () => {
 			<Container className='justufy-content-center'>
 				<Navigation />
 				<Outlet />
-			</Container></Suspense>
+			</Container>
+		</Suspense>
 	);
 }
 
