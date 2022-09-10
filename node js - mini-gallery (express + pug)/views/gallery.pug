@@ -1,0 +1,12 @@
+extends layout.pug
+block content
+	h1 #{title}
+	div(class='container')
+		- var i = 1;
+		while i <= 4
+			a(href='/'+category+'/'+i, class='img-link')
+				img(src='/img/'+category+'/'+i+'.jpg' alt=category+i class='photo')
+			- i++
+		div( class='big-photo')
+			if imgId && imgId <= 4
+				img(src='/img/'+category+'/'+imgId+'.jpg' alt=category+imgId class='photo') 

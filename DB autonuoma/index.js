@@ -290,7 +290,7 @@ app.get("/automobiliai", (req, res) => {
 });
 
 app.get("/", (req, res) => {
-	res.send("Hello World!");
+	res.send(`Go to <a href="/automobiliai">here</a>`);
 });
 
 app.listen(port, () => {

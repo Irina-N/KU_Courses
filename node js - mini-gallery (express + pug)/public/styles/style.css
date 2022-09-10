@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Josefin Sans', sans-serif;
+	transition: all .5s;
+}
+
+body {
+	background-color: #efefef;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+}
+
+nav {
+	height: 3.5rem;
+	line-height: 3.5rem;
+	font-size: 1.5rem;
+	font-weight: 100;
+	color: #fff;
+	text-align: center;
+	width: 100%;
+	display: flex;
+	gap: 2rem;
+}
+
+.nav-link {
+	text-decoration: none;
+	color:#8587c3
+}
+
+.nav-link:hover {
+	color: #c56b9c;;
+}
+
+h1 {
+	height: 4.5rem;
+	max-width: 830px;
+	line-height: 4.5rem;
+	font-size: 2.5rem;
+	font-weight: 300;
+	background-color: #8587c3;
+	color: #fff;
+	text-align: center;
+	width: 100%;
+}
+
+.container {
+	display: grid;
+	width: 100%;
+	gap: 10px;
+	justify-content: center;
+	grid-template-columns: repeat(4, minmax(auto, 200px));
+	grid-template-rows: 133px 62vw;
+	height: 95vh;
+	margin-top: 15px;
+}
+
+.home-text {
+	grid-column: 1/-1;
+	text-align: center;
+	color: #c56b9c;
+	font-size: 3rem;
+	font-weight: 700;
+	align-content: center;
+	align-self: center;
+}
+
+.img-link {
+	opacity: .6;
+}
+
+.img-link:hover {
+	opacity: 1;
+}
+
+.img-link,
+.big-photo {
+	display: block;
+	position: relative;
+	z-index: 3;
+}
+
+.big-photo {
+	grid-column: 1/-1;
+	border: 1px solid #ccc;
+	max-height: 533px;
+}
+
+.photo {
+	position: absolute;
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+}
